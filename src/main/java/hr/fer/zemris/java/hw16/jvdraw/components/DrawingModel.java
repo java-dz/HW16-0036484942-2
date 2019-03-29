@@ -13,54 +13,54 @@ import hr.fer.zemris.java.hw16.jvdraw.shapes.GeometricalObject;
  */
 public interface DrawingModel {
 
-	/**
-	 * Returns the length of the component list.
-	 * 
-	 * @return the length of the component list
-	 */
-	public int getSize();
+    /**
+     * Returns the length of the component list.
+     *
+     * @return the length of the component list
+     */
+    public int getSize();
 
-	/**
-	 * Returns the shape at the specified <tt>index</tt>.
-	 * 
-	 * @param index the requested index
-	 * @return the shape at <tt>index</tt>
-	 */
-	public GeometricalObject getObject(int index);
-	
-	/**
-	 * Removes the shape at the specified <tt>index</tt>.
-	 * 
-	 * @param index index
-	 */
-	public void removeObject(int index);
-	
-	/**
-	 * Removes all shapes from this model.
-	 */
-	public void clear();
+    /**
+     * Returns the shape at the specified <tt>index</tt>.
+     *
+     * @param index the requested index
+     * @return the shape at <tt>index</tt>
+     */
+    public GeometricalObject getObject(int index);
 
-	/**
-	 * Adds the specified <tt>shape</tt> to the model.
-	 * 
-	 * @param shape shape to be added
-	 */
-	public void add(GeometricalObject shape);
+    /**
+     * Removes the shape at the specified <tt>index</tt>.
+     *
+     * @param index index
+     */
+    public void removeObject(int index);
 
-	/**
-	 * Adds a listener to the model that's notified each time a change to the
-	 * model data occurs.
-	 * 
-	 * @param l the <tt>DrawingModelListener</tt> to be added
-	 */
-	public void addDrawingModelListener(DrawingModelListener l);
+    /**
+     * Removes all shapes from this model.
+     */
+    public void clear();
 
-	/**
-	 * Removes a listener from the list that's notified each time a change to
-	 * the model data occurs.
-	 * 
-	 * @param l the <tt>DrawingModelListener</tt> to be removed
-	 */
-	public void removeDrawingModelListener(DrawingModelListener l);
+    /**
+     * Adds the specified <tt>shape</tt> to the model.
+     *
+     * @param shape shape to be added
+     */
+    public void add(GeometricalObject shape);
+
+    /**
+     * Adds a listener to the model that's notified each time a change to the
+     * model data occurs.
+     *
+     * @param l the <tt>DrawingModelListener</tt> to be added
+     */
+    public void addDrawingModelListener(DrawingModelListener l);
+
+    /**
+     * Removes a listener from the list that's notified each time a change to
+     * the model data occurs.
+     *
+     * @param l the <tt>DrawingModelListener</tt> to be removed
+     */
+    public void removeDrawingModelListener(DrawingModelListener l);
 
 }

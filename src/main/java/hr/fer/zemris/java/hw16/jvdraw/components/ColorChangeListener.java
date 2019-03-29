@@ -17,13 +17,13 @@ import java.awt.Color;
  */
 public interface ColorChangeListener {
 
-	/**
-	 * Invoked when a new color is selected upon the <tt>source</tt>
-	 * 
-	 * @param source source that triggered color change event
-	 * @param oldColor previous color of the <tt>source</tt>
-	 * @param newColor new color of the <tt>source</tt>
-	 */
-	public void newColorSelected(IColorProvider source, Color oldColor, Color newColor);
+    /**
+     * Invoked when a new color is selected upon the <tt>source</tt>
+     *
+     * @param source source that triggered color change event
+     * @param oldColor previous color of the <tt>source</tt>
+     * @param newColor new color of the <tt>source</tt>
+     */
+    public void newColorSelected(IColorProvider source, Color oldColor, Color newColor);
 
 }
